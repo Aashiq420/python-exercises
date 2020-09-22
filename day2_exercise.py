@@ -3,7 +3,7 @@ print("First Letter: "+x[0])
 print("Last letter: "+x[-1])
 
 y = input("Would you like to convert these words to piglatin? (y/n): ")
-
+#piglatin 
 if y == 'y':
     x = x.split()
     for i in range(len(x)):
