@@ -21,9 +21,15 @@ else:
 
 '''***************************************************************'''
 
-mark = float(input("Enter the student's mark as percentage: "))
- 
-while mark <=100 and mark>=0:
+while True:
+    try:
+        mark = float(input("Enter student mark as percentage: "))
+        break
+    except ValueError:
+        print("Please enter a numerical value!\n")
+
+
+while mark<=100 and mark>=0:
     if mark>=80 and mark<=100:
         print("Grade A")
         break
