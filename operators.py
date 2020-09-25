@@ -24,4 +24,4 @@ elif a == 'n':
     print("\n")
     c = math.sqrt(h*h-b*b)
     print("The length of the third side is: "+str(c))
-    
+
