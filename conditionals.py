@@ -10,6 +10,8 @@ if avg>allow:
     delta = avg-allow
     points = delta//5
     print("Points: "+str(points))
+    if points>12:
+        print("Time to go to jail!")
 elif avg<=allow and avg>=0:
     print("You were within the speed limit")
 else:
