@@ -1,4 +1,3 @@
-
 for i in range(1,6):
     x="*"
     print(x*i)
@@ -8,6 +7,3 @@ for i in range(1,6):
             y="*"
             print(y*j)
             j=j+1
-
-   
-        
