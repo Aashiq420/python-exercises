@@ -9,10 +9,11 @@ def palindrome_check(x):
 print("*******************")
 print("PALINDROME CHECKER")
 print("*******************\n")
+
 n=input("Enter a word or number to check: ")
 ans=palindrome_check(n)
+
 if ans==True:
     print(n,"is a palindrome")
 else:
     print(n,"is not a palindrome")
-
