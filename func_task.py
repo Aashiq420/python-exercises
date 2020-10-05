@@ -41,10 +41,11 @@ rental_car_cost(user_1)
 print("The cost of rental is: R"+str(rental_car_cost(user_1)))
 
 #Defining function to deteremine total trip cost from above functions
+#this function calls from 3 other functions to return a total cost value
 def trip_cost(city,days,spending):
     total_cost = hotel_cost(days)+plane_ride_cost(user)+rental_car_cost(days)+spending
     return total_cost
 
-#taking input and sending to trip_cost
+#taking input for spending money and sending to trip_cost
 spend = int(input("How much spending money will you need? "))
 print("Total cost of trip: R"+str(trip_cost(price1,user_1,spend)))
