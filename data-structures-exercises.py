@@ -126,8 +126,10 @@ firstSet = {27, 43, 34}
 secondSet = {34, 93, 22, 27, 43, 53, 48}
 print("First set:",firstSet)
 print("Second set:",secondSet)
+print("\n")
 
 #Creating function to test if set1 is subset of set2
+#and return true or false
 def isSubset(firstset,secondset):
     counter=0
     for i in firstset:
@@ -140,6 +142,28 @@ def isSubset(firstset,secondset):
         else:
             return False
             break
-        
+
+#Creating a function to test if set 1 is a superset of set 2
+#and return true or false
+def isSuperset(set1,set2):
+    counter_2 = 0
+    for i in set1:
+        counter_2+=1
+        if len(set1)<len(set2):
+            return False
+        elif i in set2 and counter_2<len(set1)-1:
+            continue
+        elif i in set2 and counter_2==len(set1)-1:
+            return True
+
 print("First set is subset of second set -",isSubset(firstSet,secondSet))
 print("Second set is subset of first set -",isSubset(secondSet,firstSet))
+print("\n")
+print("First set is superset of second set -",isSuperset(firstSet,secondSet))
+print("Second set is superset of first set -",isSuperset(secondSet,firstSet))
+print("\n")
+
+if isSubset(firstSet,secondSet) == True:
+    firstSet.clear()
+    print("First Set -",firstSet)
+print("Second Set -",secondSet)
