@@ -127,6 +127,7 @@ secondSet = {34, 93, 22, 27, 43, 53, 48}
 print("First set:",firstSet)
 print("Second set:",secondSet)
 
+#Creating function to test if set1 is subset of set2
 def isSubset(firstset,secondset):
     counter=0
     for i in firstset:
