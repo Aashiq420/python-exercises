@@ -202,7 +202,23 @@ print("After removing unwanted elements from list:",store_list)
 print("\n\n")
 #*****************************************************************************************
 #EXERCISE 9
-#
+#Creating a dictionary and converting the non-duplicates into a list
 speed ={'jan':47, 'feb':52, 'march':47, 'April':44, 'May':52, 'June':53, 'july':54, 'Aug':44, 'Sept':54}
-val = list(dict(speed.values()))
+val = list(dict.fromkeys(speed.values()))
+
+#Printing results
 print(val)
+
+print("\n\n")
+#*****************************************************************************************
+#EXERCISE 10
+#Creating list and converting to dictionary to
+#remove duplicates then converting back to a list
+sample_values = [87, 45, 41, 65, 94, 41, 99, 94]
+sample_values = list(dict.fromkeys(sample_values))
+
+print("Unique items:",sample_values)
+tuple_1 = tuple(sample_values)
+print("Tuple:",tuple_1)
+print("Min:",min(sample_values))
+print("Max:",max(sample_values))
