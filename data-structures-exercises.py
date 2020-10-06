@@ -156,6 +156,8 @@ def isSuperset(set1,set2):
         elif i in set2 and counter_2==len(set1)-1:
             return True
 
+#Sending each set in correct order to subset and superset function
+#and printing results with a message
 print("First set is subset of second set -",isSubset(firstSet,secondSet))
 print("Second set is subset of first set -",isSubset(secondSet,firstSet))
 print("\n")
@@ -163,7 +165,44 @@ print("First set is superset of second set -",isSuperset(firstSet,secondSet))
 print("Second set is superset of first set -",isSuperset(secondSet,firstSet))
 print("\n")
 
+#Checking if first set is subset of second set in order
+#to clear first set
 if isSubset(firstSet,secondSet) == True:
     firstSet.clear()
     print("First Set -",firstSet)
 print("Second Set -",secondSet)
+
+print("\n\n")
+#*****************************************************************************************
+#EXERCISE 8
+#creating list and dictionary as well as counter for the loop 
+#and list the values of the dictionary
+#also creating a list to store non-duplicates 
+rollNumber = [47, 64, 69, 37, 76, 83, 95, 97]
+sampleDict ={'Jim':47, 'Pam':69, 'Angela':76, 'Dwight':97}
+save = sampleDict.values()
+counter_3 = 0
+store_list=[]
+
+#For loop to check if an element of rollNumber is 
+# in the list of dictionary values
+#if it is, it is added to empty list to compare after
+for i in rollNumber:
+    if i in save  and counter_3<len(rollNumber):
+        counter_3+=1
+        store_list.append(i)
+        continue
+    elif i in save and counter_3==len(rollNumber):
+        store_list.append(i)
+        break
+
+#printing results
+print("After removing unwanted elements from list:",store_list)
+
+print("\n\n")
+#*****************************************************************************************
+#EXERCISE 9
+#
+speed ={'jan':47, 'feb':52, 'march':47, 'April':44, 'May':52, 'June':53, 'july':54, 'Aug':44, 'Sept':54}
+val = list(dict(speed.values()))
+print(val)
