@@ -214,6 +214,7 @@ print("\n\n")
 #EXERCISE 10
 #Creating list and converting to dictionary to
 #remove duplicates then converting back to a list
+<<<<<<< HEAD
 #and printing results
 sample_values = [87, 45, 41, 65, 94, 41, 99, 94]
 sample_values = list(dict.fromkeys(sample_values))
@@ -224,5 +225,13 @@ tuple_1 = tuple(sample_values)
 print("Tuple:",tuple_1)
 
 #printing max and min values in list
+=======
+sample_values = [87, 45, 41, 65, 94, 41, 99, 94]
+sample_values = list(dict.fromkeys(sample_values))
+
+print("Unique items:",sample_values)
+tuple_1 = tuple(sample_values)
+print("Tuple:",tuple_1)
+>>>>>>> ed3b03e2468eb8e3e0a095d7434047cf35102f82
 print("Min:",min(sample_values))
 print("Max:",max(sample_values))
