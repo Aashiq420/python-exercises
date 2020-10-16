@@ -6,7 +6,7 @@ print(num)
 
 window = Tk()
 window.geometry("350x150")
-window.title("Number Guessing Game")
+window.title("Number Guessing Games")
 
 
 statement_label =Label(text="I have chosen a number between 1 and 100").grid(row=0, column=0,padx=10,pady=10)

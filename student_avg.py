@@ -16,7 +16,6 @@ def passfail(x):
     elif x>=50:
         return "Pass"
 
-
 result = average(mark_1,mark_2,mark_3)
 print("*********************************************")
 print("Report Card for",std_name,std_lastname)
