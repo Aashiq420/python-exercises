@@ -24,4 +24,5 @@ def game():
 guessbtn = Button(window, text="Try", command=game).grid(row=3, column=0)
 user_guess.grid(row=2, column=0)
 ans_label.grid(row=1,column=0)
+quitbtn = Button(window, text="Quit", command=window.destroy).grid(row=4, column=0)
 window.mainloop()
