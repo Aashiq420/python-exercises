@@ -1,6 +1,7 @@
 import unittest
 from max_number import *
 
+#unittest class for testing function logic
 class TestFindMaxTestCase(unittest.TestCase):
 
     def test_max_number(self):
