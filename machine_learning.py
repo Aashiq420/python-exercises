@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 
 #CHALLENGE 1
 #creates an array of numbers in the given range
-nums = np.arange(start=1, stop=21, step=1)
+nums = np.arange(start=0, stop=21, step=1)
 
 #using numpy functions to determine mean, std deviation, and variance
 #of the above generated array of numbers
@@ -31,5 +31,4 @@ plt.ylabel("Bins")
 
 #plotting the histogram with above information
 plt.hist(nums_1, bins=bins_1, edgecolor='black')
-
 plt.show()
