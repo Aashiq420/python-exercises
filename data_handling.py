@@ -32,5 +32,3 @@ medianmark=np.median(Testmarks) # calculating median
 modemarks=stats.mode(Testmarks) #calculating mode (value with highest frequencies)
 
 print(meanmarks,medianmark,modemarks)
-
-
