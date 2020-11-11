@@ -34,10 +34,10 @@ class music:
         self.display_label = Label(root, text=">none selected<", borderwidth=5, relief="groove", padx=5, pady=5, bg='black', fg='green')
 
         #buttons
-        play_btn = Button(root, text = 'PLAY', command=self.play, bg='green', fg='black')
-        pause_btn = Button(root, text='PAUSE', command=self.pause, bg='green', fg='black')
-        unpause_btn = Button(root, text='UNPAUSE', command=self.unpause, bg='green', fg='black')
-        stop_btn = Button(root, text='STOPSONG', command=self.stop, bg='green', fg='black')
+        play_btn = Button(root, text = 'PLAY', command=self.play, bg='darkgreen', fg='white')
+        pause_btn = Button(root, text='PAUSE', command=self.pause, bg='darkgreen', fg='white')
+        unpause_btn = Button(root, text='UNPAUSE', command=self.unpause, bg='darkgreen', fg='white')
+        stop_btn = Button(root, text='STOPSONG', command=self.stop, bg='darkgreen', fg='white')
 
         #listbox + scrollbar
         scrollbar = Scrollbar(root)
